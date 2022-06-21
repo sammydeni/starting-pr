@@ -4,6 +4,7 @@ import "./ExpenseItem.css";
 
 const ExpenseItem = ({ title, amount, date }) => {
   return (
+    <li>
     <Card className="expense-item">
       <ExpenseDate date={date} />
       <div className="expense-item__description">
@@ -11,6 +12,7 @@ const ExpenseItem = ({ title, amount, date }) => {
         <div className="expense-item__price">{amount}</div>
       </div>
     </Card>
+    </li>
   );
 };
 export default ExpenseItem;
